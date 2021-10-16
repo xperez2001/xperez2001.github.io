@@ -1,0 +1,88 @@
+
+body {
+    margin: 0px 0px;
+}
+
+nav.NavigationBar {
+    width: 100%;
+    background-color: rgba(0,0,0,0.92);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    position: fixed;
+    /*
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+    */
+}
+
+ul.NavigationBar {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;    
+    /*
+    border-style: solid;
+    border-width: 2px;
+    border-color: green;
+    */
+}
+
+li.NavigationBar {
+    display: inline-block;
+    margin: 0% 2%;
+    /*
+    border-style: dotted;
+    border-width: 1px;
+    border-color: white;
+    */
+}
+
+li.NavigationBar a {
+    display: block;
+    color: #f5f5f7;
+    opacity: 0.8;
+    text-align: center;
+    padding: 14px 10px;
+    text-decoration: none;
+}
+/* S'HA DE CENTRAR
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 0;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+}
+*/
+
+li.NavigationBar a:hover {
+    opacity: 1;
+}
+
+.ProductImages img {
+    width: 100%;
+}
+
+/*
+li {
+    float: left;
+}
+*/
+/*
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    float: left;
+}
+*/
