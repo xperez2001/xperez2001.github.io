@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head lang="es">
+        <meta charset="UTF-8"/>
         <title>MUSIC.fm</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0"/>
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
+
     <body>
-        <section class="Intro">
-            <div class="TopBar">
-                <span id="Icon" class="material-icons">headphones</span>
-                <span id="Shop" class="material-icons">shopping_cart</span>
+
+        <header id="Intro">
+            <div id="Account" style="grid-column: 1 / 2">
+                <a href="#Account">
+                    <span class="material-icons">account_circle</span>
+                </a>
             </div>
 
-            <header>
+            <div id="ShoppingBag" style="grid-column: 3 / 4">
+                <a href="#ShoppingBag">
+                    <span class="material-icons">shopping_cart</span>
+                </a>
+            </div>
+
+            <div id="IntroName" style="grid-column: 2/3; grid-row: 2 / 3">
                 <h1>MUSIC.fm</h1>
                 <h4>Las mejores canciones en nuestra web</h4>
-            </header>
-        </section>
+            </div>
 
-        <section class="Cuerpo">
-            <nav class="Categorias"> 
-                <h4>Pop</h4>
-                <h4>Rock</h4>
-                <h4>Jazz</h4>
-                <h4>Clásica</h4>
+        </header>
+
+        <section id="Cuerpo">
+            <nav id="Categorias">
+                <h4 style="grid-area: Pop">Pop</h4>
+                <h4 style="grid-area: Rock">Rock</h4>
+                <h4 style="grid-area: Jazz">Jazz</h4>
+                <h4 style="grid-area: Clasica">Clásica</h4>
             </nav>
 
-            <div class="AlbumesPortada">
+            <nav id="Albumes">
                 <img src="media/After hours.jpg" alt="After hours carátula">
                 <img src="media/Bad Habits.jpg" alt="Bad Habits carátula">
                 <img src="media/Cold Heart.jpg" alt="Cold Heart carátula">
@@ -40,7 +50,13 @@
                 <img src="media/Don't Shoot Me.jpg" alt="Don't Shoot Me carátula">
                 <img src="media/Honky Chateau.jpg" alt="Honky Chatau carátula">
                 <img src="media/The abbey Road.webp" alt="The Abbey Road carátula">
-            </div>
+            </nav>
         </section>
+
+
+        <footer>
+
+        </footer>
+
     </body>
 </html>
