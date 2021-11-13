@@ -28,7 +28,7 @@ div a:hover {
 }
 
 #Intro {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/home/xavier/Escritorio/proves/media/IntroBackground.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://xperez2001.github.io/media/IntroBackground.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -117,7 +117,7 @@ div a:hover {
         grid-template-rows: auto auto auto;
     }
 }
-@media screen and (min-width: 450px) and (max-width: 680px)
+@media screen and (max-width: 680px)
 {
     #Account {
         grid-column: 1/2;
@@ -143,7 +143,7 @@ div a:hover {
 
     #Intro {
         height: 55px;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/home/xavier/Escritorio/proves/media/IntroBackground.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://xperez2001.github.io/media/IntroBackground.jpg");
         display: grid;
         grid-template-columns: 15% auto 15%;
     }
@@ -169,48 +169,6 @@ div a:hover {
 }
 @media screen and (max-width: 450px)
 {
-    #Account {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    #IntroName {
-        grid-column: 2/3;
-        grid-row: 1/2;
-        padding: 0;
-        margin: 0;
-    }
-    #IntroName h4 {
-        display: none;
-    }
-    #IntroName h1 {
-        margin: 12px;
-        font-size: 25px;
-    }
-    #ShoppingBag {
-        grid-column: 3/4;
-        grid-row: 1/2;
-    }
-
-    #Intro {
-        height: 55px;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/home/xavier/Escritorio/proves/media/IntroBackground.jpg");
-        display: grid;
-        grid-template-columns: 15% auto 15%;
-    }
-
-    #Cuerpo {
-        padding: 40px;
-    }
-    
-    #Categorias {
-        font-size: 14px;
-    }
-    
-    #Albumes img {
-        width: 100px;
-        height: 100px;
-    }
-
     #Albumes {
         grid-template-columns: auto auto auto;
         grid-template-rows: auto auto auto;
