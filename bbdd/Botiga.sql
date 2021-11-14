@@ -31,7 +31,9 @@ CREATE TABLE `Album` (
   `id` int(1) NOT NULL,
   `nom` varchar(50) COLLATE utf8_general_ci NOT NULL,
   `preu` decimal(6,2) NOT NULL,
-  `foto` varchar(200) COLLATE utf8_general_ci NOT NULL,
+  `foto` varchar(50) COLLATE utf8_general_ci NOT NULL,
+  `alt_foto` varchar(50) COLLATE utf8_general_ci NOT NULL,
+  `descripció` varchar(500) COLLATE utf8_general_ci NOT NULL,
   `estil_id` int(1) NOT NULL,
   `artista` varchar(50) COLLATE utf8_general_ci NOT NULL,
   `segell` varchar(50) COLLATE utf8_general_ci NOT NULL,
@@ -43,10 +45,10 @@ CREATE TABLE `Album` (
 -- Dumping data for table `Album`
 --
 
-INSERT INTO `Album` (`id`, `nom`, `preu`, `foto`, `estil_id`, `artista`, `segell`, `data_publicacio`, `format`) VALUES
-(1, '569', '11.55', '/home/loan/Desktop/web_proj/xperez2001.github.io/media/569.jpg', 1, 'GO!GO!7188', 'BMG', '2007-10-24', 'CD'),
-(2, 'After hours', '11.55', './media/After\\ hours.jpg', '2', 'The Weekend', 'XO, Republic Records', '2020-03-20', 'CD'),
-(3, 'Bad Habits', '11.55', './media/Bad\\ Habits.jpg', '2', 'Ed Sheeran', 'Asylum Records UK', '2021-06-25', 'CD');
+INSERT INTO `Album` (`id`, `nom`, `preu`, `foto`, `alt_foto`,`descripció`, `estil_id`, `artista`, `segell`, `data_publicacio`, `format`) VALUES
+(1, '569', '11.55', './media/569.jpg', 'portada 569', 'Un album que mola molt', 1, 'GO!GO!7188', 'BMG', '2007-10-24', 'CD'),
+(2, 'After hours', '11.55', './media/After\\ hours.jpg', 'portada After hours', 'Un album que mola molt', 2, 'The Weekend', 'XO, Republic Records', '2020-03-20', 'CD'),
+(3, 'Bad Habits', '11.55', './media/Bad\\ Habits.jpg', 'portada Bad Habits ', 'Un album que mola molt', 2, 'Ed Sheeran', 'Asylum Records UK', '2021-06-25', 'CD');
 
 -- --------------------------------------------------------
 
@@ -87,7 +89,9 @@ CREATE TABLE `Estil` (
 
 INSERT INTO `Estil` (`id`, `nom`) VALUES
 (1, 'Rock'),
-(2, 'Pop');
+(2, 'Pop')
+(3, 'Jazz'),
+(4, 'Classica');
 
 -- --------------------------------------------------------
 
