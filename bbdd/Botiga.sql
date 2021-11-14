@@ -29,15 +29,15 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `Album` (
   `id` int(1) NOT NULL,
-  `nom` varchar(50) COLLATE utf16_spanish_ci NOT NULL,
+  `nom` varchar(50) COLLATE utf8_general_ci NOT NULL,
   `preu` decimal(6,2) NOT NULL,
-  `foto` varchar(200) COLLATE utf16_spanish_ci NOT NULL,
+  `foto` varchar(200) COLLATE utf8_general_ci NOT NULL,
   `estil_id` int(1) NOT NULL,
-  `artista` varchar(50) COLLATE utf16_spanish_ci NOT NULL,
-  `segell` varchar(50) COLLATE utf16_spanish_ci NOT NULL,
+  `artista` varchar(50) COLLATE utf8_general_ci NOT NULL,
+  `segell` varchar(50) COLLATE utf8_general_ci NOT NULL,
   `data_publicacio` date NOT NULL,
-  `format` varchar(20) COLLATE utf16_spanish_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_spanish_ci;
+  `format` varchar(20) COLLATE utf8_general_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `Album`
@@ -60,7 +60,7 @@ CREATE TABLE `Comandes` (
   `data` datetime(1) NOT NULL,
   `import_total` decimal(5,2) NOT NULL,
   `total_elements` int(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_spanish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `Comandes`
@@ -78,8 +78,8 @@ INSERT INTO `Comandes` (`id`, `usr_id`, `data`, `import_total`, `total_elements`
 
 CREATE TABLE `Estil` (
   `id` int(1) NOT NULL,
-  `nom` varchar(50) COLLATE utf16_spanish_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_spanish_ci;
+  `nom` varchar(50) COLLATE utf8_general_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `Estil`
@@ -100,9 +100,9 @@ CREATE TABLE `Linies_comanda` (
   `comanda_id` int(1) NOT NULL,
   `album_id` int(1) NOT NULL,
   `quantitat` int(1) NOT NULL,
-  `nom` varchar(50) COLLATE utf16_spanish_ci NOT NULL,
+  `nom` varchar(50) COLLATE utf8_general_ci NOT NULL,
   `preu` decimal(4,2) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_spanish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `Linies_comanda`
@@ -119,13 +119,13 @@ INSERT INTO `Linies_comanda` (`id`, `comanda_id`, `album_id`, `quantitat`, `nom`
 
 CREATE TABLE `Usuaris` (
   `id` int(1) NOT NULL,
-  `nom` varchar(40) COLLATE utf16_bin NOT NULL,
-  `direcció` varchar(50) COLLATE utf16_bin NOT NULL,
-  `població` varchar(59) COLLATE utf16_bin NOT NULL,
-  `cp` varchar(5) COLLATE utf16_bin NOT NULL,
-  `email` varchar(30) COLLATE utf16_bin NOT NULL,
-  `passwd` varchar(256) COLLATE utf16_bin NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_bin;
+  `nom` varchar(40) COLLATE utf8_general_ci NOT NULL,
+  `direcció` varchar(50) COLLATE utf8_general_ci NOT NULL,
+  `població` varchar(59) COLLATE utf8_general_ci NOT NULL,
+  `cp` varchar(5) COLLATE utf8_general_ci NOT NULL,
+  `email` varchar(30) COLLATE utf8_general_ci NOT NULL,
+  `passwd` varchar(256) COLLATE utf8_general_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `Usuaris`
