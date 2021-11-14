@@ -160,7 +160,7 @@ body {
         grid-template-columns: 100%;
         grid-template-rows: 65px 335px auto auto;
         grid-row-gap: 25px;
-        padding: 2% 60px 20px 60px;
+        padding: 2% 50px 20px 50px;
     }
 
     #Titulo {
@@ -186,6 +186,8 @@ body {
     #Cuerpo {
         grid-template-rows: auto 250px auto auto;
         grid-row-gap: 15px;
+        padding-left: 35px;
+        padding-right: 35px;
     }
     #Titulo {
         font-size: 14px;
