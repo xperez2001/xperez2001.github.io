@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 350px;
+}
+
+#Intro {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://xperez2001.github.io/media/IntroBackground.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55px;
+    color: rgba(255,255,255,0.8);
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+    grid-template-areas: 
+        'account name shoppingBag';
+    text-align: center;
+}
+
+#Account, #ShoppingBag{
+    padding-top: 13px;
+}
+
+#Intro a {
+    color: rgba(255,255,255,0.8);
+    transition: color 0.5s;
+}
+
+#Intro a:hover {
+    color: rgba(255,255,255,1);
+}
+
+#IntroName h1{
+    padding: 0;
+    margin: 12px;
+    font-size: 25px;
+}
+
+#Cuerpo {
+    padding: 60px;
+    color: rgba(0, 0, 0, 0.8);
+    display: grid;
+    grid-column-gap: 5%;
+    grid-template-columns: 400px auto 25%;
+    grid-template-rows: 65px 335px;
+    justify-content: center;
+}
+
+#Caratula {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#Caratula img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+}
+
+#Titulo{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+#Info {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align:justify;
+}
+
+#Cesta {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-areas:
+        'Opciones'
+        'Comprar';
+    grid-template-rows: auto auto;
+}
+
+#Opciones {
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template-areas:
+        'Vinilo'
+        'CD'
+        'mp3';
+    grid-template-rows: 60px 60px 60px;
+}
+
+#Opciones div {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 50% 50%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: border 0.5s;
+    padding: 0;
+}
+
+#Opciones div:hover {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#Comprar {
+    background-color: #0077ed;
+    color: rgb(255,255,255);
+    height: 50px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+#Comprar:hover {
+    background-color: #0080ff
+}
+
+@media screen and (max-width: 1300px)
+{
+    #Cuerpo {
+        grid-template-columns: 400px auto;
+        grid-template-rows: 65px 335px auto;
+    }
+    #Cesta {
+        margin: 50px 20% 50px 20%;
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    #Opciones {
+        grid-template-rows: auto auto auto;
+    }
+    #Comprar {
+        height: auto;
+    }
+    
+}
+@media screen and (max-width: 930px)
+{
+    #Cuerpo {
+        grid-template-columns: 335px auto;
+    }
+
+    #Titulo {
+        grid-column: 1/3;
+    }
+    
+    #Caratula {
+        grid-row: 2/3;
+    }
+}
+@media screen and (max-width: 855px)
+{
+    #Cuerpo {
+        grid-template-columns: 100%;
+        grid-template-rows: 65px 335px auto auto;
+        grid-row-gap: 25px;
+        padding: 2% 60px 20px 60px;
+    }
+
+    #Titulo {
+        grid-column: 1/2;
+    }
+    #Caratula {
+        grid-column: 1/2;
+        text-align: center;
+    }
+    #Info {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #Cesta {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        margin: 0 15% 0 15%;
+    }
+
+}
+@media screen and (max-width: 500px)
+{
+    #Cuerpo {
+        grid-template-rows: auto 250px auto auto;
+        grid-row-gap: 15px;
+    }
+    #Titulo {
+        font-size: 14px;
+    }
+    #Info {
+        font-size: 12px;
+    }
+    #Cesta {
+        font-size: 12px;
+    }
+
+}
