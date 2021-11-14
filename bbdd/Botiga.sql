@@ -44,7 +44,9 @@ CREATE TABLE `Album` (
 --
 
 INSERT INTO `Album` (`id`, `nom`, `preu`, `foto`, `estil_id`, `artista`, `segell`, `data_publicacio`, `format`) VALUES
-(1, '569', '11.55', '/home/loan/Desktop/web_proj/xperez2001.github.io/media/569.jpg', 1, 'GO!GO!7188', 'BMG', '2007-10-24', 'CD');
+(1, '569', '11.55', '/home/loan/Desktop/web_proj/xperez2001.github.io/media/569.jpg', 1, 'GO!GO!7188', 'BMG', '2007-10-24', 'CD'),
+(2, 'After hours', '11.55', './media/After\\ hours.jpg', '2', 'The Weekend', 'XO, Republic Records', '2020-03-20', 'CD'),
+(3, 'Bad Habits', '11.55', './media/Bad\\ Habits.jpg', '2', 'Ed Sheeran', 'Asylum Records UK', '2021-06-25', 'CD');
 
 -- --------------------------------------------------------
 
