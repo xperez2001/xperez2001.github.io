@@ -47,7 +47,7 @@ body {
     display: grid;
     grid-column-gap: 12%;
     grid-template-areas:
-        'Pop Rock Jazz Clasica';
+        'auto auto auto auto';
     justify-content: center;
 }
 

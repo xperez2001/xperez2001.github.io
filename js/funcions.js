@@ -1,12 +1,27 @@
 function LogIn() {
-    var elementHTML = document.getElementById("LoginContainer");
-       
-    if (elementHTML.style.display == "none" || elementHTML.style.display == "")
+
+    var loginHTML = document.getElementById("LoginContainer");
+    
+    if (document.body.scrollWidth > 680)
     {
-        elementHTML.style.display = "block";
+        if (elementHTML.style.display == "none" || elementHTML.style.display == "")
+            elementHTML.style.display = "block";
+        else if (elementHTML.style.display == "block")
+            elementHTML.style.display = "none";
     }
-    else if (elementHTML.style.display == "block")
+    else 
     {
-        elementHTML.style.display = "none";
+        var cuerpoHTML = document.getElementById("Cuerpo");
+        cuerpoHTML.style.filter = "blur(10px)"
+        cuerpoHTML.style.position = "relative";
+
+        loginHTML.style.display = "block";
+        loginHTML.style.gridColumnStart = "1";
+        loginHTML.style.gridColumnStart = "2";
+        loginHTML.style.gridRowStart = "3";
+        loginHTML.style.gridRowEnd = "4";
+        loginHTML.style.zIndex = 1;
+        loginHTML.style.marginTop = "50%";
+
     }
 }
