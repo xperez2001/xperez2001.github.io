@@ -27,7 +27,7 @@ function LogIn() {
             loginHTML.style.gridColumnStart = "2";
             loginHTML.style.gridRowStart = "3";
             loginHTML.style.gridRowEnd = "4";
-            loginHTML.style.marginTop = "50%";
+            loginHTML.style.marginTop = "200px";
         }
         else if (loginHTML.style.display == "block")
         {
@@ -37,4 +37,22 @@ function LogIn() {
             loginHTML.style.marginTop = "0";
         }
     }
+}
+
+function LogIn2()
+{
+    var loginHTML = document.getElementById("LoginContainer");
+    var cuerpoHTML = document.getElementById("Cuerpo");
+
+    if (loginHTML.style.display == "none" || loginHTML.style.display == "")
+    {          
+        cuerpoHTML.style.filter = "blur(10px)";
+        loginHTML.style.display = "block";
+    }
+    else if (loginHTML.style.display == "block")
+    {
+        loginHTML.style.display = "none";
+        cuerpoHTML.style.filter = "blur(0px)";
+    }
+
 }
