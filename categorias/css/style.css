@@ -87,7 +87,7 @@ body {
 }
 
 #LoginContainer {
-    display: block;
+    display: none;
     margin-top: 200px;
     z-index: 1;
     grid-row: 2/3;
