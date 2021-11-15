@@ -4,10 +4,10 @@ function LogIn() {
     
     if (document.body.scrollWidth > 680)
     {
-        if (elementHTML.style.display == "none" || elementHTML.style.display == "")
-            elementHTML.style.display = "block";
-        else if (elementHTML.style.display == "block")
-            elementHTML.style.display = "none";
+        if (loginHTML.style.display == "none" || loginHTML.style.display == "")
+            loginHTML.style.display = "block";
+        else if (loginHTML.style.display == "block")
+            loginHTML.style.display = "none";
     }
     else 
     {
