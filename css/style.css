@@ -17,15 +17,55 @@ div a:hover {
 
 #Account {
     grid-column: 1/2;
+    padding: 13px;
 }
 
-#IntroName {
-    grid-column: 2/3;
+#LoginContainer {
+    grid-column: 1/3;
     grid-row: 2/3;
+    background-color: rgb(39,39,39);
+    border-radius: 10px;
+    margin: 0 20px 20px 20px;
+    padding: 5px;
+    display: none;
+}
+
+form div {
+    margin-top: 10px;
+}
+
+form input {
+    border-radius: 5px;
+    padding-left: 5px;
+    height: 20px;
+}
+
+#Submit {
+    padding: 5px;
+}
+
+#Submit input {
+    height: 25px;
+    width: 100px;
+    background-color: #0077ed;
+    color: rgb(255,255,255);
+}
+
+#Submit p {
+    font-size: 10px;
+    margin: 0;
+}
+
+
+#IntroName {
+    grid-column: 1/5;
+    grid-row: 2/3;
+    padding: 20px 0 0 0;
 }
 
 #ShoppingBag {
-    grid-column: 3/4;
+    grid-column: 4/5;
+    padding: 13px;
 }
 
 #Intro {
@@ -36,17 +76,9 @@ div a:hover {
     height: 250px;
     color: rgba(255,255,255,0.8);
     display: grid;
-    grid-template-columns: 150px auto 150px;
+    grid-template-columns: 150px 150px auto 150px;
     grid-template-rows: 50px auto;
     text-align: center;
-}
-
-#Account, #ShoppingBag {
-    padding: 13px;
-}
-
-#IntroName {
-    padding: 20px 0 0 0;
 }
 
 #Cuerpo {
