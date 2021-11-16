@@ -56,3 +56,8 @@ function LogIn2()
     }
 
 }
+
+function Registre() {
+    var form = document.getElements
+    
+}
