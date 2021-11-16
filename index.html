@@ -29,7 +29,7 @@
                 <h4>Las mejores canciones en nuestra web</h4>
             </div>
 
-            <div id="LoginContainer">
+            <div class="LoginContainer" id="Log">
                 <form action="" method="post">
                     <div id="correu">
                         <label for="correu">Dirección de e-mail</label><br>
@@ -41,7 +41,35 @@
                     </div>
                     <div id="Submit">
                         <input type="submit" value="Inicia sesión">
-                        <p onclick="Registre()">Registrarme</p>
+                        <a onclick="LogIn2(2)"><p>Registrarme</p></a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="LoginContainer" id="Reg">
+                <form action="" method="post">
+                    <div id="Nom">
+                        <label for="nom">Nom</label><br>
+                        <input type="text" id="nom" name="Nom" placeholder="Nom..."><br>
+                    </div>
+                    <di id="correuR">
+                        <label for="correu">Dirección de e-mail</label><br>
+                        <input type="email" id="correu" name="Correu" placeholder="email@example.com"><br>
+                    </di>
+                    <div  id="passwordR">
+                        <label for="contraseña">Contraseña</label><br>
+                        <input type="password" id="contraseña" name="Contraseña" placeholder="Contraseña...">
+                    </div>
+                    <di id="address">
+                        <label for="direccion">Dirección</label><br>
+                        <input type="text" id="dirrrecion" name="Address" placeholder="Dirección..."><br>
+                    </di>
+                    <div id="codiPostal">
+                        <label for="codiPostal">Código Postal</label><br>
+                        <input type="number" id="codiPostal" name="CodigoPostal" placeholder="Código...">
+                    </div>
+                    <div id="Submit">
+                        <input type="submit" value="Registrar">
                     </div>
                 </form>
             </div>

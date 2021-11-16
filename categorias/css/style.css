@@ -86,7 +86,7 @@ body {
     scale: 0.9;
 }
 
-#LoginContainer {
+.LoginContainer {
     display: none;
     z-index: 1;
     grid-row: 2/3;

@@ -39,7 +39,7 @@ body {
     font-size: 25px;
 }
 
-#LoginContainer {
+.LoginContainer {
     display: none;
     z-index: 1;
     grid-row: 2/3;
