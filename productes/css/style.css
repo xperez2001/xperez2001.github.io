@@ -14,6 +14,7 @@ body {
     color: rgba(255,255,255,0.8);
     display: grid;
     grid-template-columns: 15% auto 15%;
+    grid-template-rows: auto;
     grid-template-areas: 
         'account name shoppingBag';
     text-align: center;
@@ -36,6 +37,44 @@ body {
     padding: 0;
     margin: 12px;
     font-size: 25px;
+}
+
+#LoginContainer {
+    display: none;
+    z-index: 1;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    background-color: rgb(39,39,39);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 200px auto auto auto;
+}
+
+form div {
+    margin-top: 10px;
+}
+
+form input {
+    border-radius: 5px;
+    padding-left: 5px;
+    height: 20px;
+}
+
+#Submit {
+    padding: 5px;
+}
+
+#Submit input {
+    height: 25px;
+    width: 100px;
+    background-color: #0077ed;
+    color: rgb(255,255,255);
+}
+
+#Submit p {
+    font-size: 10px;
+    margin: 0;
 }
 
 #Cuerpo {
