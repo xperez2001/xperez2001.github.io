@@ -71,13 +71,13 @@ function login(type) {
         loginElement.style.backgroundColor = "rgb(39,39,39)";
         cuerpoElement.style.filter = "blur(10px)";
 
-        var screenHeight = screen.availHeight;
-        var screenWidth = screen.availWidth;
+        var windowHeight = window.innerHeight;
+        var windowWidth = window.innerWidth;
         var loginHeight = loginElement.clientHeight;
         var loginWidth = loginElement.clientWidth;
 
-        var middleH = ((screenHeight / 2) - (loginHeight / 2));
-        var middleW = ((screenWidth / 2) - (loginWidth / 2));
+        var middleH = ((windowHeight / 2) - (loginHeight / 2));
+        var middleW = ((windowWidth / 2) - (loginWidth / 2));
 
         loginElement.style.top = middleH + "px";   
         loginElement.style.left = middleW + "px";
