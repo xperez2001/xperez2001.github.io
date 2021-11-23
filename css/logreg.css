@@ -1,0 +1,30 @@
+#Login {
+    color: rgba(255,255,255,0.8);
+    text-align: center;
+    position: absolute;
+    width: 300px;
+    border-radius: 10px;
+}
+
+#Login div {
+    margin: 15px 0;
+}
+
+#Login input {
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+#Submit input{
+    margin-top: 10px;
+    height: 25px;
+    width: 100px;
+    background-color: #0077ed;
+    color: white;
+    padding-left: 0;
+}
+
+#Submit p {
+    margin: 5px;
+    font-size: 12px;
+}

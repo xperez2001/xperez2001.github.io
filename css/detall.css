@@ -5,81 +5,19 @@ body {
     min-width: 350px;
 }
 
-#Intro {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://xperez2001.github.io/media/IntroBackground.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 55px;
-    color: rgba(255,255,255,0.8);
-    display: grid;
-    grid-template-columns: 15% auto 15%;
-    grid-template-rows: auto;
-    grid-template-areas: 
-        'account name shoppingBag';
-    text-align: center;
-}
-
-#Account, #ShoppingBag{
-    padding-top: 13px;
-}
-
-#Intro a {
-    color: rgba(255,255,255,0.8);
+a {
+    text-decoration: none;
+    color:inherit;
     transition: color 0.5s;
 }
 
-#Intro a:hover {
+#Account a:hover, #IntroName a:hover, #ShoppingBag a:hover {
     color: rgba(255,255,255,1);
 }
 
-#IntroName h1{
-    padding: 0;
-    margin: 12px;
-    font-size: 25px;
-}
-
-.LoginContainer {
-    display: none;
-    z-index: 1;
-    grid-row: 2/3;
-    grid-column: 2/3;
-    background-color: rgb(39,39,39);
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 500px;
-    margin: 200px auto auto auto;
-}
-
-form div {
-    margin-top: 10px;
-}
-
-form input {
-    border-radius: 5px;
-    padding-left: 5px;
-    height: 20px;
-}
-
-#Submit {
-    padding: 5px;
-}
-
-#Submit input {
-    height: 25px;
-    width: 100px;
-    background-color: #0077ed;
-    color: rgb(255,255,255);
-}
-
-#Submit p {
-    font-size: 10px;
-    margin: 0;
-}
-
-#Cuerpo {
-    padding: 60px;
-    color: rgba(0, 0, 0, 0.8);
+#Cuerpo{
+    padding: 2% 5%;
+    color: rgba(0,0,0,0.8);
     display: grid;
     grid-column-gap: 5%;
     grid-template-columns: 400px auto 25%;
@@ -90,26 +28,25 @@ form input {
 #Caratula {
     grid-column: 1/2;
     grid-row: 1/3;
-    max-width: 100%;
-    max-height: 100%;
-}
-
-#Caratula img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 5px;
-}
-
-#Titulo{
-    grid-column: 2/3;
-    grid-row: 1/2;
     text-align: center;
 }
 
-#Info {
+#Caratula img { 
+    border-radius: 5px;
+    max-width: 100%;
+    max-height: 100%;
+ }
+
+#Titulo { 
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+ }
+
+#Descripcion {
     grid-column: 2/3;
     grid-row: 2/3;
-    text-align:justify;
+    text-align: justify;
 }
 
 #Cesta {
@@ -118,19 +55,12 @@ form input {
     text-align: center;
     display: grid;
     grid-row-gap: 20px;
-    grid-template-areas:
-        'Opciones'
-        'Comprar';
     grid-template-rows: auto auto;
 }
 
 #Opciones {
     display: grid;
     grid-row-gap: 10px;
-    grid-template-areas:
-        'Vinilo'
-        'CD'
-        'mp3';
     grid-template-rows: 60px 60px 60px;
 }
 
@@ -138,30 +68,29 @@ form input {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 50% 50%;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0,0,0,0.2);
     border-radius: 10px;
     transition: border 0.5s;
     padding: 0;
 }
 
 #Opciones div:hover {
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(0,0,0,0.8);
 }
 
 #Comprar {
     background-color: #0077ed;
-    color: rgb(255,255,255);
+    color: white;
     height: 50px;
     border-radius: 8px;
     transition: background-color 0.2s;
 }
 
 #Comprar:hover {
-    background-color: #0080ff
+    background-color: #0080ff;
 }
 
-@media screen and (max-width: 1300px)
-{
+@media screen and (max-width: 1300px) {
     #Cuerpo {
         grid-template-columns: 400px auto;
         grid-template-rows: 65px 335px auto;
@@ -177,8 +106,8 @@ form input {
     #Comprar {
         height: auto;
     }
-    
 }
+
 @media screen and (max-width: 930px)
 {
     #Cuerpo {
@@ -193,13 +122,12 @@ form input {
         grid-row: 2/3;
     }
 }
-@media screen and (max-width: 855px)
-{
+
+@media screen and (max-width: 855px) {
     #Cuerpo {
         grid-template-columns: 100%;
         grid-template-rows: 65px 335px auto auto;
         grid-row-gap: 25px;
-        padding: 2% 50px 20px 50px;
     }
 
     #Titulo {
@@ -207,9 +135,8 @@ form input {
     }
     #Caratula {
         grid-column: 1/2;
-        text-align: center;
     }
-    #Info {
+    #Descripcion {
         grid-column: 1/2;
         grid-row: 3/4;
     }
@@ -218,24 +145,21 @@ form input {
         grid-row: 4/5;
         margin: 0 15% 0 15%;
     }
-
 }
+
 @media screen and (max-width: 500px)
 {
     #Cuerpo {
         grid-template-rows: auto 250px auto auto;
         grid-row-gap: 15px;
-        padding-left: 35px;
-        padding-right: 35px;
     }
     #Titulo {
         font-size: 14px;
     }
-    #Info {
+    #Descripcion {
         font-size: 12px;
     }
     #Cesta {
         font-size: 12px;
     }
-
 }

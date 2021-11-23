@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 350px;
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
+    transition: color 0.5s;
+}
+
+#Account a:hover, #IntroName a:hover, #ShoppingBag a:hover {
+    color: rgba(255,255,255,1);
+}
+
+#Cuerpo {
+    padding: 2% 5%;
+    display: grid;
+    grid-template-areas:
+        'cat'
+        'alb';
+    grid-template-rows: auto auto;
+    grid-row-gap: 50px;
+    justify-content: center;
+    text-align: center;
+}
+
+#Categorias {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 80px;
+    grid-column-gap: 10%;
+    justify-content: center;
+    overflow: auto;
+}
+
+#Categorias a {
+    border-bottom: 2px solid white;
+    transition: border-bottom 0.5s;
+}
+
+#Categorias a:hover {
+    border-bottom: 2px solid black;
+}
+
+#Albumes a img {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    #Albumes a img {
+        height: 150px;
+        width: 150px;
+    }
+    #Cuerpo {
+        grid-row-gap: 35px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    #Albumes a img {
+        height: 100px;
+        width: 100px;
+    }
+
+    #Categorias {
+        grid-column-gap: 1%;
+    }
+}

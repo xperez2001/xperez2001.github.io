@@ -1,0 +1,29 @@
+#Account {
+    grid-column: 1/2;
+}
+#IntroName {
+    grid-column: 2/3;
+    padding-top: 10px;
+}
+#IntroName h1 {
+    margin: 0;
+}
+#ShoppingBag {
+    grid-column: 3/4;
+}
+
+#Account, #ShoppingBag{
+    padding-top: 15px;
+}
+
+.HeaderPetit {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://xperez2001.github.io/media/IntroBackground.jpg");
+    height: 55px;
+    width: 100%;
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    display: grid;
+    grid-template-rows: 55px;
+    grid-template-columns: 15% auto 15%;
+    text-align: center;
+}
