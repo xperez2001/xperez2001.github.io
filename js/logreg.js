@@ -79,7 +79,7 @@ function login(type) {
         var middleH = ((windowHeight / 2) - (loginHeight / 2));
         var middleW = ((windowWidth / 2) - (loginWidth / 2));
 
-        if (middleH > 0)
+        if (middleH < 0)
             middleH = 0;
         
         loginElement.style.top = middleH + "px";   
